@@ -1,11 +1,14 @@
 package factoryPattern;
 
+import factoryPattern.produce.ComputerProduce;
+import factoryPattern.produce.PhoneProduce;
+import factoryPattern.produce.TelevisionProduce;
 import util.Utils;
 
 /**
  * @author thbelief
  * @date 2021/12/25 11:25 AM
- * @info
+ * @info 商店工厂
  */
 public class StoreFactory {
     public static final String TYPE_COMPUTER = "computer";
