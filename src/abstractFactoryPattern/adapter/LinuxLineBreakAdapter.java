@@ -1,7 +1,7 @@
-package AbstractFactoryPattern.adapter;
+package abstractFactoryPattern.adapter;
 
-import AbstractFactoryPattern.ILineBreakAdapter;
-import AbstractFactoryPattern.lineBreak.LinuxLineBreak;
+import abstractFactoryPattern.ILineBreakAdapter;
+import abstractFactoryPattern.lineBreak.LinuxLineBreak;
 
 /**
  * @author thbelief

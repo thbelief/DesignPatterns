@@ -1,4 +1,4 @@
-package AbstractFactoryPattern.lineBreak;
+package abstractFactoryPattern.lineBreak;
 
 import util.Utils;
 

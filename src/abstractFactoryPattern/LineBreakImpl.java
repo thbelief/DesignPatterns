@@ -1,6 +1,6 @@
-package AbstractFactoryPattern;
+package abstractFactoryPattern;
 
-import AbstractFactoryPattern.lineBreak.WindowsLineBreak;
+import abstractFactoryPattern.lineBreak.WindowsLineBreak;
 
 /**
  * @author thbelief

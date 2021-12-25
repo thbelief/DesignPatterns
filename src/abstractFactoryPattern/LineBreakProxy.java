@@ -1,4 +1,4 @@
-package AbstractFactoryPattern;
+package abstractFactoryPattern;
 
 import java.lang.reflect.Proxy;
 

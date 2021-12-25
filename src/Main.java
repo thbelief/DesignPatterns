@@ -1,8 +1,8 @@
-import AbstractFactoryPattern.ILineBreak;
-import AbstractFactoryPattern.LineBreakImpl;
-import AbstractFactoryPattern.LineBreakProxy;
-import AbstractFactoryPattern.adapter.LinuxLineBreakAdapter;
-import AbstractFactoryPattern.adapter.MacLineBreakAdapter;
+import abstractFactoryPattern.ILineBreak;
+import abstractFactoryPattern.LineBreakImpl;
+import abstractFactoryPattern.LineBreakProxy;
+import abstractFactoryPattern.adapter.LinuxLineBreakAdapter;
+import abstractFactoryPattern.adapter.MacLineBreakAdapter;
 import factoryPattern.IProduce;
 import factoryPattern.StoreFactory;
 

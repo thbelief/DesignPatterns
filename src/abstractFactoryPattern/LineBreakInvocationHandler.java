@@ -1,7 +1,5 @@
-package AbstractFactoryPattern;
+package abstractFactoryPattern;
 
-
-import org.junit.platform.commons.util.ClassLoaderUtils;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

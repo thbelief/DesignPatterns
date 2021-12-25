@@ -1,4 +1,4 @@
-package AbstractFactoryPattern;
+package abstractFactoryPattern;
 
 /**
  * @author thbelief
