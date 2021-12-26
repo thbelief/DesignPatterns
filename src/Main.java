@@ -7,6 +7,8 @@ import builderPattern.AssembleBuilder;
 import factoryPattern.IProduce;
 import factoryPattern.StoreFactory;
 import prototypePattern.QuestionBankController;
+import singletonPattern.DoubleLockCheck;
+import singletonPattern.EnumerateSingletonPatterns;
 import util.Utils;
 
 import java.util.HashMap;
@@ -18,14 +20,15 @@ import java.util.HashMap;
  */
 public class Main {
     public static void main(String[] args) {
-        //testFactoryPattern();
-        //testAbstractFactoryPattern();
-        //testBuilderPattern();
-        try {
-            testPrototypePattern();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
+//        testFactoryPattern();
+//        testAbstractFactoryPattern();
+//        testBuilderPattern();
+//        try {
+//            testPrototypePattern();
+//        } catch (CloneNotSupportedException e) {
+//            e.printStackTrace();
+//        }
+        testSingletonPatterns();
     }
 
     /**
@@ -79,5 +82,14 @@ public class Main {
         Utils.logInfo(controller.createPaper("小红", "123"));
         Utils.logInfo(controller.createPaper("小蓝", "456"));
         Utils.logInfo(controller.createPaper("小绿", "789"));
+    }
+
+    /**
+     * 测试单例模式
+     */
+    private static void testSingletonPatterns() {
+        Utils.logInfo("testSingletonPatterns\n");
+        DoubleLockCheck.getInstance().printInfo();
+        EnumerateSingletonPatterns.mInstance.print();
     }
 }
