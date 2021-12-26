@@ -6,6 +6,7 @@ import abstractFactoryPattern.adapter.MacLineBreakAdapter;
 import builderPattern.AssembleBuilder;
 import factoryPattern.IProduce;
 import factoryPattern.StoreFactory;
+import prototypePattern.QuestionBankController;
 import util.Utils;
 
 import java.util.HashMap;
@@ -17,9 +18,14 @@ import java.util.HashMap;
  */
 public class Main {
     public static void main(String[] args) {
-        testFactoryPattern();
-        testAbstractFactoryPattern();
-        testBuilderPattern();
+        //testFactoryPattern();
+        //testAbstractFactoryPattern();
+        //testBuilderPattern();
+        try {
+            testPrototypePattern();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -62,5 +68,16 @@ public class Main {
         Utils.logInfo(builder.levelLow().getInfos());
         Utils.logInfo(builder.levelMid().getInfos());
         Utils.logInfo(builder.levelTop().getInfos());
+    }
+
+    /**
+     * 测试原型模式
+     */
+    private static void testPrototypePattern() throws CloneNotSupportedException {
+        Utils.logInfo("testPrototypePattern\n");
+        QuestionBankController controller = new QuestionBankController();
+        Utils.logInfo(controller.createPaper("小红", "123"));
+        Utils.logInfo(controller.createPaper("小蓝", "456"));
+        Utils.logInfo(controller.createPaper("小绿", "789"));
     }
 }
